@@ -1,7 +1,6 @@
-import redux, {createStore, applyMiddleware} from 'redux';
-import thunk from 'redux-thunk';
+// import redux, {createStore, applyMiddleware} from 'redux';
+// import thunk from 'redux-thunk';
 import uuid from 'react-uuid';
-
 
 // ---------------------------------- Setting Initial State For Movies
 const initialState = [
@@ -47,6 +46,3 @@ export default function moviesReducer(movies = initialState, action) {
             return movies;
     }
 }
-
-// const store = createStore(moviesReducer, applyMiddleware(thunk));
-// store.subscribe(() => console.log(store.getState));

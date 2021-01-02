@@ -1,11 +1,11 @@
-import redux, {createStore, applyMiddleware} from 'redux';
-import thunk from 'redux-thunk';
+// import redux, {createStore, applyMiddleware} from 'redux';
+// import thunk from 'redux-thunk';
 import uuid from 'react-uuid';
 
 // ---------------------------------- Setting Initial State For TV Shows
 const initialState = [ 
-    {_id: uuid(), title: 'Dexter'},
-    {_id: uuid(), title: 'Avatar the Last Airbender'}
+    {_id: uuid(), showTitle: 'Dexter'},
+    {_id: uuid(), showTitle: 'Avatar the Last Airbender'}
 ]
 
 // ---------------------------------- Adding A TV Show
