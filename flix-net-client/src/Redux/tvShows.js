@@ -39,8 +39,3 @@ export default function tvShowReducer(tvShows = initialState, action) {
             return tvShows;
     }
 }
-
-// const store = createStore(tvShowReducer, applyMiddleware(thunk));
-// store.subscribe(() => console.log(store.getState()));
-
-// export default store;
