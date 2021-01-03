@@ -7,6 +7,7 @@ export default function Main() {
         <main>
             <h3>single page website main content</h3>
             <Movies />
+            <TVShows />
         </main>
     );
 }
