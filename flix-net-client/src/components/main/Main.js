@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Movies from './mainComponets/movies/Movies';
+import TVShows from './mainComponets/tvShows/TvShows';
 
 export default function Main() {
     return (
