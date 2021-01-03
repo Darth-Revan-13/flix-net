@@ -15,7 +15,7 @@ export default function Main() {
                 <Route exact path='/Movies' component={Movies} />
                 <Route exact path='/TVShows' component={TVShows} />
             </Switch>
-    </main>
+        </main>
     );
 }
 
