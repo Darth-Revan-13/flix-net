@@ -4,25 +4,23 @@ import {Switch, Route} from 'react-router-dom';
 
 import Movies from './mainComponets/movies/Movies';
 import TVShows from './mainComponets/tvShows/TvShows';
+import {Link} from 'react-router-dom';
 
 export default function Main() {
     return (
-        <main>
-            <h3>single page website main content</h3>
-            <Movies />
-            <TVShows />
-        </main>
+        <main className='main'>
+            <Switch>
+                {/* <Route exact path='/Home'>
+                    <Home />
+                        </Route> */}
+                <Route exact path='/Movies'>
+                    <Movies />
+                        </Route>
+                <Route exact path='/TVShows'>
+                    <TVShows />
+                        </Route>
+            </Switch>
+    </main>
     );
 }
 
-{/* <Switch>
-<Route exact path='/Home'>
-    <Home />
-        </Route>
-<Route exact path='/Service'>
-    <Service />
-        </Route>
-<Route exact path='/About'>
-    <About />
-        </Route>
-</Switch> */}
