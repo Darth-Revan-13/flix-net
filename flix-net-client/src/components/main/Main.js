@@ -5,29 +5,15 @@ import {Switch, Route} from 'react-router-dom';
 import Movies from './mainComponets/movies/Movies';
 import TVShows from './mainComponets/tvShows/TvShows';
 import Home from './mainComponets/home/Home';
-import {Link} from 'react-router-dom';
+
 
 export default function Main() {
     return (
-        <main className='main'>
-<<<<<<< HEAD
-=======
-        <nav className='nav'>
-            <Link className='link' to='/Home'>Home</Link>
-            <Link className='link' to='/Movies'>Movies</Link>
-            <Link className='link' to='/TVShows'>TV Shows</Link>
-        </nav>
->>>>>>> 0366f5dd26e9b372aec3990e529590ee0ef24f08
+        <main className='main'> 
             <Switch>
-                <Route exact path='/Home'>
-                    <Home />
-                        </Route>
-                <Route exact path='/Movies'>
-                    <Movies />
-                        </Route>
-                <Route exact path='/TVShows'>
-                    <TVShows />
-                        </Route>
+                <Route exact path={['/', '/Home']} component={Home} />
+                <Route exact path='/Movies' component={Movies} />
+                <Route exact path='/TVShows' component={TVShows} />
             </Switch>
     </main>
     );
