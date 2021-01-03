@@ -3,7 +3,7 @@
 import uuid from 'react-uuid';
 
 // ---------------------------------- Setting Initial State For Movies
-const initialState = [
+const initialMovies = [
     {_id: uuid(), movieTitle: 'Seven Pounds'},
     {_id: uuid(), movieTitle: 'Fast and Furious'}
 ]
@@ -30,7 +30,7 @@ export const getAllMovies = () => {
 }
 
 // ---------------------------------------------------------------------- Movie Reducer
-export default function moviesReducer(movies = initialState, action) {
+export default function moviesReducer(movies = initialMovies, action) {
     switch(action.type) {
         case 'ADD_MOVIE':
             return [...movies, action.data]

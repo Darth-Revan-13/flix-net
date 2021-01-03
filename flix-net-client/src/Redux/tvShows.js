@@ -3,7 +3,7 @@
 import uuid from 'react-uuid';
 
 // ---------------------------------- Setting Initial State For TV Shows
-const initialState = [ 
+const initialShows = [ 
     {_id: uuid(), showTitle: 'Dexter'},
     {_id: uuid(), showTitle: 'Avatar the Last Airbender'}
 ]
@@ -23,7 +23,7 @@ export const removeTvShow = (_id) => {
 }
 
 // ------------------------------------------------------------------- Setting Initial StateSetting Initial State
-export default function tvShowReducer(tvShows = initialState, action) {
+export default function tvShowReducer(tvShows = initialShows, action) {
     switch(action.type) {
         case 'ADD_TV_SHOW':
             return [...tvShows, action.data]
