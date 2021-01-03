@@ -4,7 +4,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import _ from '../../../../../node_modules/lodash';
 
 export default function TVShows() {
-    const initialState = useSelector(tvShows => tvShows.tvShowReducer)
+    const initialState = useSelector(tvShows => tvShows.tvShowsReducer)
     console.log(initialState);
     return (
         <div>
