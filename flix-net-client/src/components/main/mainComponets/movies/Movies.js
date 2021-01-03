@@ -4,10 +4,10 @@ import {useSelector, useDispatch} from 'react-redux';
 import _ from '../../../../../node_modules/lodash';
 
 export default function Movies() {
-    const initialState = useSelector(movies => movies.moviesReducer)
+    const initialState = useSelector(movies => movies.moviesReducer);
     console.log(initialState);
     return (
-        <div>
+        <div className='-container'>
             <table>
                 <thead>
                     <tr>
