@@ -1,5 +1,5 @@
 import React from 'react';
-import {useSelector, useDispatch} from 'react-redux';
+import {useSelector} from 'react-redux';
 
 import _ from '../../../../../node_modules/lodash';
 
@@ -7,7 +7,7 @@ export default function Movies() {
     const initialState = useSelector(movies => movies.moviesReducer);
     console.log(initialState);
     return (
-        <div className='-container'>
+        <div className='movie-container'>
             <table>
                 <thead>
                     <tr>
