@@ -6,6 +6,7 @@ import Movies from './mainComponets/movies/Movies';
 import TVShows from './mainComponets/tvShows/TvShows';
 import Home from './mainComponets/home/Home';
 
+import './main.css';
 
 export default function Main() {
     return (

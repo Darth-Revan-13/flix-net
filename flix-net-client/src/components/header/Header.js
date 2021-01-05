@@ -5,7 +5,7 @@ import './header.css';
 export default function Header() {
     return (
         <header>
-            <h1>header content</h1>
+            <h1>FlixNet</h1>
         </header>
     );
 }

@@ -3,11 +3,13 @@ import {useSelector, useDispatch} from 'react-redux';
 
 import _ from '../../../../../node_modules/lodash';
 
+import './tvShows.css';
+
 export default function TVShows() {
     const initialState = useSelector(tvShows => tvShows.tvShowsReducer)
     console.log(initialState);
     return (
-        <div>
+        <div className='movie-container'>
             <table>
                 <thead>
                     <tr>
@@ -16,7 +18,7 @@ export default function TVShows() {
                 </thead>
                 <tbody>
                     {_.map(initialState, (show) => (
-                        <tr id={show._id} className='show-container'>
+                        <tr id={show._id} className='tr-container'>
                             <td>{show.showTitle}</td>
                         </tr>
                     ))}

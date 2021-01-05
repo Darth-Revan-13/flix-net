@@ -3,6 +3,8 @@ import {useSelector} from 'react-redux';
 
 import _ from '../../../../../node_modules/lodash';
 
+import './movies.css';
+
 export default function Movies() {
     const initialState = useSelector(movies => movies.moviesReducer);
     console.log(initialState);
@@ -16,7 +18,7 @@ export default function Movies() {
                 </thead>
                 <tbody>
                     {_.map(initialState, (movie) => (
-                        <tr id={movie._id} className='movie-container'>
+                        <tr id={movie._id} className='tr-container'>
                             <td>{movie.movieTitle}</td>
                         </tr>
                     ))}

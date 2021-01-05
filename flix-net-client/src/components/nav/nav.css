@@ -2,10 +2,11 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: #1f1f20;
     border: 5px solid red;
     border-top: 0px;
     border-bottom: 0px;
+    padding: 5px;
 }
 
 .link {
