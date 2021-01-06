@@ -9,7 +9,7 @@ import TVShowForm from './tvForm/TVShowForm';
 import './tvShows.css';
 
 export default function TVShows() {
-    const initialState = useSelector(tvShows => tvShows.tvShowsReducer)
+    const initialState = useSelector(tvShows => tvShows.tvShowsReducer);
     const dispatch = useDispatch();
     
     return (
