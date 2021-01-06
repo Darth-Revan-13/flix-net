@@ -35,25 +35,5 @@ export default function TVShows() {
                 </table>
             </div>
         </div>
-        // <div className='movie-container'>
-        //     <div className='form-container'>
-        //         <TVShowForm />
-        //     </div>
-        //     <table>
-        //         <thead>
-        //             <tr>
-        //                 <th>Favorite TV Shows</th>
-        //             </tr>
-        //         </thead>
-        //         <tbody>
-        //             {_.map(initialState, (show) => (
-        //                 <tr id={show._id} className='tr-container'>
-        //                     <td>{show.showTitle}</td>
-        //                     <button onClick={() => dispatch(removeTvShow(show._id))}>X</button>
-        //                 </tr>
-        //             ))}
-        //         </tbody>
-        //     </table>
-        // </div>
     );
 }
